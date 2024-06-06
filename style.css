@@ -1,0 +1,64 @@
+:root {
+  --color-pri: #84d1ae;
+  --color-sec: #214b37;
+  --color-white: #fff;
+
+  --color-name: #1a3829;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    290deg,
+    var(--color-pri) 0%,
+    var(--color-sec) 100%
+  );
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  margin: -12rem;
+}
+
+body,
+input,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: var(--color-name);
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+}
+
+main {
+  background: var(--color-white);
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  margin: 0 auto;
+
+  text-align: center;
+}
