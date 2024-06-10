@@ -24,6 +24,7 @@
       <div class="screen01">
         <h1>Jogo da Adivinhação</h1>
         <p>Adivinhe um número entre 0 e 10</p>
+        <p>ou pressione M para saber o número.</p>
         <form>
           <input id="inputNumber" type="number" min="0" max="10" />
           <button id="btnTry">Tentar</button>
@@ -34,7 +35,10 @@
       <div class="screen02 hide">
         <h2>
           Acertou o número <span id="randomSelect"></span> <br />em
-          <span id="trys">3</span> tentativas
+          <span id="trys">3</span> tentativa(s)
+          <span id="trick" class="hide"
+            >com uma ajudinha nossa. rs rs rs...</span
+          >
         </h2>
         <button id="btnReset">Jogar Novamente</button>
       </div>

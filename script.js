@@ -3,9 +3,12 @@ const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 const screen01 = document.querySelector(".screen01")
 const screen02 = document.querySelector(".screen02")
+const theDOM = document.querySelector("body")
+
 let randomNumber = Math.round(Math.random() * 10)
 let xAttemps = 0
 let theInputNumber = document.querySelector("#inputNumber")
+let useTrick = false
 
 // Focus no Input
 theInputNumber.focus()
@@ -13,8 +16,16 @@ theInputNumber.focus()
 // Events
 btnTry.addEventListener("click", handleClickTry)
 btnReset.addEventListener("click", handleClickReset)
+theDOM.addEventListener("keydown", handleEnter)
 
 // Functions
+function handleEnter(event) {
+  if (event.key == "m" || event.key == "M") {
+    useTrick = true
+    alert(`O Número que você deve adivinhar é ${randomNumber}`)
+  }
+}
+
 function handleClickTry(event) {
   event.preventDefault()
   let valueNumber = Number(theInputNumber.value)
@@ -40,6 +51,7 @@ function handleClickReset(event) {
   randomNumber = Math.round(Math.random() * 10)
   xAttemps = 0
   theInputNumber.value = ""
+  useTrick = false
   toogleGame()
   theInputNumber.focus()
 }
@@ -47,4 +59,9 @@ function handleClickReset(event) {
 function toogleGame() {
   screen01.classList.toggle("hide")
   screen02.classList.toggle("hide")
+  if (useTrick) {
+    screen02.querySelector("#trick").classList.remove("hide")
+  } else {
+    screen02.querySelector("#trick").classList.add("hide")
+  }
 }
