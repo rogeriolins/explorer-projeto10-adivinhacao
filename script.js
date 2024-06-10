@@ -34,7 +34,10 @@ function handleClickTry(event) {
     if (Number(valueNumber) == randomNumber) {
       // Acertou
       screen02.querySelector("#randomSelect").innerText = randomNumber
-      screen02.querySelector("#trys").innerText = xAttemps
+      let plural = xAttemps == 1 ? "" : "s"
+      screen02.querySelector(
+        "#trys"
+      ).innerText = `${xAttemps} tentativa${plural}`
       toogleGame()
       btnReset.focus()
     } else {
