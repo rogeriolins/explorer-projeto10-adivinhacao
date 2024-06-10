@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/ponto-de-interrogacao.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <main>
@@ -21,14 +26,17 @@
         <p>Adivinhe um número entre 0 e 10</p>
         <form>
           <input id="inputNumber" type="number" min="0" max="10" />
-          <button onclick="handleClick(event)">Tentar</button>
+          <button id="btnTry">Tentar</button>
         </form>
       </div>
 
       <!-- Screen 02 -->
       <div class="screen02 hide">
-        <h2>Acertou em <span>3</span> tentativas</h2>
-        <button onclick="newGame()">Jogar Novamente</button>
+        <h2>
+          Acertou o número <span id="randomSelect"></span> <br />em
+          <span id="trys">3</span> tentativas
+        </h2>
+        <button id="btnReset">Jogar Novamente</button>
       </div>
     </main>
     <script src="script.js"></script>

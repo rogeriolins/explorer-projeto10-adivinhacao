@@ -19,7 +19,7 @@ Projeto para a formação Fullstack da Rocketseat para ensino de tecnologias WEB
 <br>
 
 <p align="center">
-  <img alt="Projeto Explorer" src=".github/my-cover-10.jpg" width="100%">
+  <img alt="Projeto Explorer" src=".github/my-cover-projeto10.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Projeto é um Jogo da Advinhação
 
-- [Acesse o projeto finalizado, online](https://rogeriolins.github.io/explorer-projeto10-adivinhacao)
+- [Acesse o projeto finalizado, online](https://rogeriolins.github.io/explorer-projeto10-adivinhacao/)
 
 - [Assistir aulas](https://www.rocketseat.com.br/formacao/fullstack?utm_source=github&utm_medium=explorer-projeto-10-advinhacao&utm_campaign=capture-explorer&utm_term=organic&utm_content=descricao-github-rogeriolins)
 
